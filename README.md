@@ -40,7 +40,9 @@ Harmonium actua com un assaistent intel·ligent que:
  * APIs de Dades:
    * Discogs API (per a dades de publicació com l'any, el segell i els estils).
    * Spotify API (per a l'anàlisi acústica i estructural de la música）.
-   * cyanite.ai (per a un analisi més extens com a qualitat premium). 
+   * cyanite.ai (per a un analisi més extens com a qualitat premium).
+ * Web Worker (per permetre l'utilització de les tasques pesants mentre l'aplicacció segueix funcionant)
+ * WebAssembly (WASM) (Per a l'anàlisi d'àudio i visualitzacions complexes).
  * Interacció amb Fitxers Locals: File System Access API (per a llegir les carpetes de música).
  * js-id3-writer (per incrustar les metadates als fitxers locals i fer-los perdurables fora de la biblioteca)
  * Qualitat de Codi: ESLint i Prettier (per a garantir un codi net, consistent i lliure d'errors).
