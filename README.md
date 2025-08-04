@@ -36,14 +36,15 @@ Harmonium actua com un assaistent intel·ligent que:
  * Base de Dades: IndexedDB + Dexie.js per a un emmagatzematge local i privat.
  * Interfície d'Usuari:
    * Angular Material (Navegació)
-   * Wavesurfer.js (per a la visualització de l'espectogram musical i la seva interacció, inclou compatibilitat amb .flac per a ios i safari) + Web Audio API (Filtres de banda) 
+   * Wavesurfer.js (per a la visualització de l'espectogram musical i la seva interacció, inclou compatibilitat amb .flac per a ios i safari) + Web Audio API (Filtres de banda)
+   * -web audio api (incompatible aiff amb browsers, descartat)-
  * APIs de Dades:
    * Discogs API (per a dades de publicació com l'any, el segell i els estils).
    * Spotify API (per a l'anàlisi acústica i estructural de la música）.
    * cyanite.ai (per a un analisi més extens com a qualitat premium).
  * Web Worker (per permetre l'utilització de les tasques pesants mentre l'aplicacció segueix funcionant)
  * WebAssembly (WASM) (Per a l'anàlisi d'àudio i visualitzacions complexes).
- * Interacció amb Fitxers Locals: File System Access API (per a llegir les carpetes de música).
+ * -Interacció amb Fitxers Locals: File System Access API (per a llegir les carpetes de música).- No funciona  en firefox
  * js-id3-writer (per incrustar les metadates als fitxers locals i fer-los perdurables fora de la biblioteca)
  * Qualitat de Codi: ESLint i Prettier (per a garantir un codi net, consistent i lliure d'errors).
  * Progressive Web App amb Media Session API + Service worker
